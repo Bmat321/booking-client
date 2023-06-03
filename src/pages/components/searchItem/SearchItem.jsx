@@ -25,7 +25,9 @@ const SearchItem = ({ item }) => {
         <div className="dText">
           <span className="dPrice">${item.cheapestPrice}</span>
           <span className="dTax">Includes taxes and fees</span>
-          <Link to={`/hotels/${item._id}`}>
+          <Link
+            to={`https://booking-api-j9a7.onrender.com/api/hotels/${item._id}`}
+          >
             <button className="dAva">See Availability</button>
           </Link>
         </div>

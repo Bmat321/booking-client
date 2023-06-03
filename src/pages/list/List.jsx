@@ -18,7 +18,9 @@ const List = () => {
   const [max, setMax] = useState(undefined);
 
   const { data, isLoading, error, refetch } = useFetch(
-    `/hotels?city=${destination}&min=${min || 0}&max=${max || 999}`
+    `https://booking-api-j9a7.onrender.com/api/hotels?city=${destination}&min=${
+      min || 0
+    }&max=${max || 999}`
   );
 
   const handleSearch = () => {

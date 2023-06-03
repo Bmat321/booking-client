@@ -3,8 +3,9 @@ import useFetch from "../../hooks/useFetch";
 import "./propertyTwo.css";
 
 const PropertyTwo = () => {
-  const { data, isLoading, error } = useFetch("https://booking-api-j9a7.onrender.com/hotels?featured=true&limit=4");
-  console.log("Property", data)
+  const { data, isLoading, error } = useFetch(
+    "https://booking-api-j9a7.onrender.com/api/hotels?featured=true&limit=4"
+  );
 
   return (
     <div className="pTwo">
@@ -12,7 +13,7 @@ const PropertyTwo = () => {
         "Loading please wait..."
       ) : (
         <>
-          {data?.map((item) => (
+          {data.map((item) => (
             <div className="pItem" key={item._id}>
               {item.photos[0] ? (
                 ""
