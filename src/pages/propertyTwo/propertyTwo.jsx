@@ -3,7 +3,7 @@ import useFetch from "../../hooks/useFetch";
 import "./propertyTwo.css";
 
 const PropertyTwo = () => {
-  const { data, isLoading, error } = useFetch("/hotels?featured=true&limit=4");
+  const { data, isLoading, error } = useFetch("https://booking-api-j9a7.onrender.com/hotels?featured=true&limit=4");
   console.log("Property", data)
 
   return (
