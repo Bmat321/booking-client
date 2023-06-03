@@ -11,7 +11,7 @@ const PropertyTwo = () => {
         "Loading please wait..."
       ) : (
         <>
-          {data.map((item) => (
+          {data?.map((item) => (
             <div className="pItem" key={item._id}>
               {item.photos[0] ? (
                 ""
