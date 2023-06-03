@@ -4,6 +4,7 @@ import "./propertyTwo.css";
 
 const PropertyTwo = () => {
   const { data, isLoading, error } = useFetch("/hotels?featured=true&limit=4");
+  console.log("Property", data)
 
   return (
     <div className="pTwo">
