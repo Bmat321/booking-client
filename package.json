@@ -44,7 +44,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://booking-api-j9a7.onrender.com/api",
+  "proxy": "https://booking-api-j9a7.onrender.com",
   "devDependencies": {
     "react-error-overlay": "^6.0.10"
   }
